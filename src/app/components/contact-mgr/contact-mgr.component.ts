@@ -12,6 +12,9 @@ export class ContactMgrComponent implements OnInit{
   public loading: boolean = false;
   public contacts : Icontact[] = [];
   public errorMessage : string | null = null;
+  public user: string = '';
+  contactsDuplicate : Icontact[] = [];
+
   constructor(private contactService: ContactService) {
 
   }
@@ -24,6 +27,7 @@ export class ContactMgrComponent implements OnInit{
     this.loading = true;
     this.contactService.getAllContacts().subscribe((contacts: Icontact[])=> {
       this.contacts = contacts;
+      this.contactsDuplicate = contacts;
       this.loading = false;
     },
     error=> {
@@ -43,4 +47,19 @@ export class ContactMgrComponent implements OnInit{
       })
     }
   }
+
+
+  searchUser() {
+    if (this.user) {
+      this.contacts = this.contactsDuplicate.filter(el => el.name.includes(this.user))
+    } else {
+      this.contacts = this.contactsDuplicate;
+    }
+  }
+
+  reset() {
+    this.user = '';
+    this.contacts = this.contactsDuplicate;
+  }
+
 }

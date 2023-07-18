@@ -9,15 +9,16 @@
             <p class="fst-italic">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut sequi quas similique deleniti aliquam ipsa ratione minus autem beatae? Ex, quis ratione! Earum assumenda autem, enim mollitia culpa atque error.
             </p>
-            <form action="">
+            <form (submit)="searchUser()">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col">
-                                <input class="form-control" placeholder="Search User" type="text">
+                                <input [(ngModel)]="user" name="User" class="form-control" placeholder="Search User" type="text">
                             </div>
                             <div class="col">
                                 <input type="submit" class="btn btn-outline-dark" value="Search">
+                                <input type="reset" class="btn btn-danger ms-2" value="Reset" (click)="reset()">
                             </div>
                         </div>
                     </div>
