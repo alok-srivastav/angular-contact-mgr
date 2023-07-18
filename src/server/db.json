@@ -1,0 +1,70 @@
+{
+  "contacts": [
+    {
+      "id": "Asd234f",
+      "name": "Ganesh",
+      "email": "ganesh@gmail.com",
+      "photo": "https://e7.pngegg.com/pngimages/188/437/png-clipart-ganesha-ganesha-thumbnail.png",
+      "mobile": "121212",
+      "company": "Bhagwan",
+      "title": "God",
+      "groupId": "2"
+    },
+    {
+      "id": "Psdfs",
+      "name": "Ram",
+      "email": "ram@gmail.com",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv91TirZsud9qZFEb5v1B7TgkwxJK9wlOJ5iAYuco&s",
+      "mobile": "909022",
+      "company": "Bhagwan",
+      "title": "God",
+      "groupId": "2"
+    },
+    {
+      "id": "sdf23",
+      "name": "Alok",
+      "email": "alok@gmail.com",
+      "photo": "data:image/jpeg;base64,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",
+      "mobile": "34344324",
+      "company": "Infy",
+      "title": "Developer",
+      "groupId": "4"
+    },
+    {
+      "id": "234dfgdfg",
+      "name": "Ram",
+      "email": "ram@gmail.com",
+      "photo": "https://img.lovepik.com/free-png/20211105/lovepik-young-business-women-png-image_400317477_wh1200.png",
+      "mobile": "456456",
+      "company": "TCS",
+      "title": "Tester",
+      "groupId": "5"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}
